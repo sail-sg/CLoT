@@ -20,7 +20,7 @@ This repository is the official codebase of "Let's Think Outside the Box: Explor
 
 ## 🤣 Introduction
 
-**Semantic Understanding and Reasoning** adapter (SUR-adapter) for pre-trained **diffusion models** can acquire the powerful semantic understanding and reasoning capabilities from **large language models** to build a high-quality textual semantic representation for text-to-image generation. 
+To the best of our knowledge, we are the first to profoundly explore the Leap-of-Thought (LoT) ability in multimodal large language models (LLMs). This involves challenging LLMs to **think outside the box**, a non-sequential thinking skill equally crucial alongside popular sequential thinking abilities, such as Chain-of-Thought based methods. In this study, we delve into the LLM's LoT ability through the lens of a humor generation game called Oogiri (大喜利). The Oogiri game serves as an ideal platform for exploring the LLM's LoT ability, as it compels participants to think creatively beyond conventional boundaries and provide unexpected and humorous responses to multimodal information (including I2T, T2T, and IT2T). 
 
 <p align="center">
   <img src="image/example.png">
@@ -29,15 +29,17 @@ This repository is the official codebase of "Let's Think Outside the Box: Explor
 ## 😆 News
 
 
-2023/10/20 - We have provided an example checkpoint of SUR-adapter [[Google Drive](https://drive.google.com/drive/folders/1UyC9_AqTezmHXmj4dh0A-9RBKKx_JmJZ?usp=share_link)]. Please try it! 
+2023/12/1 - We released our paper [[arxiv]](www.google.com). Please check it out! 
 
-2023/08/19 - We have provided the data scraping code for Civitai. Please take a look at [processing](https://github.com/Qrange-group/SUR-adapter/blob/main/data_collect/processing.ipynb).
 
 ## 😂 TODO
 
-- [x] data collection script
-- [x] pretrain model
+- [x] project page
+- [ ] online demo
+- [ ] code
 - [ ] dataset
+
+
 
 
 ## 😄 Citation
