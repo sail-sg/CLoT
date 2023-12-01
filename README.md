@@ -4,8 +4,10 @@
 [![page](https://img.shields.io/badge/Project_Page-CLoT-orange)](www.google.com)
 </br>
 
-<img src="image/logo2.png" width="550" height="150"> 
 
+<p align="center">
+  <img src="image/logo2.png" width="550" height="150"> 
+</p>
 
 By [Shanshan Zhong](https://github.com/zhongshsh)<sup>* 1,2</sup> and [Zhongzhan Huang](https://dedekinds.github.io)<sup>* 1,2</sup> and [Shanghua Gao](https://shgao.site/)<sup>3</sup>  and [Wushao Wen](https://scholar.google.com/citations?user=FSnLWy4AAAAJ)<sup>2</sup> and [Liang Lin](http://www.linliang.net)<sup>2</sup>  </br> and [Marinka Zitnik](https://zitniklab.hms.harvard.edu/)<sup>3</sup> and [Pan Zhou](https://panzhous.github.io/)<sup>#1</sup>
 
