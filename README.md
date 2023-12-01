@@ -14,7 +14,9 @@ By [Shanshan Zhong](https://github.com/zhongshsh)<sup>* 1,2</sup> and [Zhongzhan
 <sup>1</sup> Sea AI Lab  <sup>2</sup> Sun Yat-sen University <sup>3</sup> Harvard University</br>
 <sup>* </sup>Equal contribution <sup>#</sup>Corresponding author
 
-This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](www.google.com). 🤣👉**Click [[project page]](www.google.com) for more funny examples**👈.
+This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](www.google.com). 
+
+🤣👉**Click [[project page]](www.google.com) for more funny examples**👈.
 
 
 
@@ -34,8 +36,8 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 ## 😂 TODO
 
-- [x] project page
-- [ ] online demo
+- [ ] project page
+- [ ] online demo (HuggingFace etc.)
 - [ ] code
 - [ ] dataset
 
