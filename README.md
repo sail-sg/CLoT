@@ -23,7 +23,7 @@ This repository is the official codebase of "Let's Think Outside the Box: Explor
 **Semantic Understanding and Reasoning** adapter (SUR-adapter) for pre-trained **diffusion models** can acquire the powerful semantic understanding and reasoning capabilities from **large language models** to build a high-quality textual semantic representation for text-to-image generation. 
 
 <p align="center">
-  <img src="https://github.com/Qrange-group/RAS/assets/62104945/af863827-2ea4-45cb-b3ed-2f98ba0e7d03">
+  <img src="image/example.png">
 </p>
 
 ## 😆 News
