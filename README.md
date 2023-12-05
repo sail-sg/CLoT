@@ -1,6 +1,6 @@
 
 ## Creative Leap-of-Thought (CLoT)
-[![paper](https://img.shields.io/badge/cs.CV-1111.11111-b31b1b?logo=arxiv&logoColor=red)](www.google.com)
+[![paper](https://img.shields.io/badge/cs.AI-1111.11111-b31b1b?logo=arxiv&logoColor=red)](www.google.com)
 [![page](https://img.shields.io/badge/Project_Page-CLoT-orange)](https://zhongshsh.github.io/CLoT/)
 </br>
 
