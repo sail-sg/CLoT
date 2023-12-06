@@ -1,6 +1,6 @@
 
 ## Creative Leap-of-Thought (CLoT)
-[![paper](https://img.shields.io/badge/cs.AI-1111.11111-b31b1b?logo=arxiv&logoColor=red)](www.google.com)
+[![paper](https://img.shields.io/badge/cs.AI-2312.02439-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2312.02439)
 [![page](https://img.shields.io/badge/Project_Page-CLoT-orange)](https://zhongshsh.github.io/CLoT/)
 </br>
 
@@ -14,7 +14,7 @@ By [Shanshan Zhong](https://github.com/zhongshsh)<sup>* 1,2</sup> and [Zhongzhan
 <sup>1</sup> Sea AI Lab  <sup>2</sup> Sun Yat-sen University <sup>3</sup> Harvard University</br>
 <sup>* </sup>Equal contribution <sup>#</sup>Corresponding author
 
-This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](www.google.com). 
+This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](https://arxiv.org/abs/2312.02439). 
 
 🤣👉**Click [[project page]](https://zhongshsh.github.io/CLoT/) for more funny examples**👈.
 
@@ -32,7 +32,7 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 2023/12/6 - We released our project page [[project page]](https://zhongshsh.github.io/CLoT/). 👈😆Please check it out! 
 
-2023/12/5 - We released our paper [[arxiv]](www.google.com). Please check it out! 
+2023/12/5 - We released our paper [[arxiv]](https://arxiv.org/abs/2312.02439). Please check it out! 
 
 
 ## 😂 TODO
