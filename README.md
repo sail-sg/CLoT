@@ -24,6 +24,9 @@ This repository is the official codebase of "Let's Think Outside the Box: Explor
 
 To the best of our knowledge, we are the first to profoundly explore the Leap-of-Thought (LoT) ability in multimodal large language models (LLMs). This involves challenging LLMs to **think outside the box**, a non-sequential thinking skill equally crucial alongside popular sequential thinking abilities, such as Chain-of-Thought based methods. In this study, we delve into the LLM's LoT ability through the lens of a humor generation game called Oogiri (大喜利). The Oogiri game serves as an ideal platform for exploring the LLM's LoT ability, as it compels participants to think outside the box and provide unexpected and humorous responses to multimodal information (including I2T, T2T, and IT2T). 
 
+<p align="center">
+  <img src="image/example.png">
+</p>
 
 ## 😆 News
 
