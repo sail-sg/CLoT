@@ -50,9 +50,9 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 ```
 @misc{zhong2023clot,
-  title={Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation},
-  author={Zhong, Shanshan and Huang, Zhongzhan and Gao, Shanghua and Wen, Weushao and Lin, Liang and Zitnik, Marinka and Zhou, Pan},
-  booktitle={arxiv},
-  year={2023}
+  title={Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation},
+  author={Zhong, Shanshan and Huang, Zhongzhan and Gao, Shanghua and Wen, Weushao and Lin, Liang and Zitnik, Marinka and Zhou, Pan},
+  journal={arXiv preprint arXiv:2312.02439},
+  year={2023}
 }
 ```
