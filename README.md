@@ -39,7 +39,7 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 - [x] project page
 - [x] preprint paper
-- [ ] online demo (HuggingFace etc.)
+- [ ] online demo (Hugging Face etc.)
 - [ ] code
 - [ ] dataset
 
