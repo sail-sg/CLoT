@@ -1,4 +1,3 @@
-
 ## Creative Leap-of-Thought (CLoT)
 [![paper](https://img.shields.io/badge/cs.AI-2312.02439-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2312.02439)
 [![page](https://img.shields.io/badge/Project_Page-CLoT-orange)](https://zhongshsh.github.io/CLoT/)
@@ -9,12 +8,8 @@
   <img src="image/logo2.png" width="550" height="150"> 
 </p>
 
-By [Shanshan Zhong](https://github.com/zhongshsh)<sup>* 1,2</sup> and [Zhongzhan Huang](https://dedekinds.github.io)<sup>* 1,2</sup> and [Shanghua Gao](https://shgao.site/)<sup>3</sup>  and [Wushao Wen](https://scholar.google.com/citations?user=FSnLWy4AAAAJ)<sup>2</sup> and [Liang Lin](http://www.linliang.net)<sup>2</sup>  </br> and [Marinka Zitnik](https://zitniklab.hms.harvard.edu/)<sup>3</sup> and [Pan Zhou](https://panzhous.github.io/)<sup>#1</sup>
 
-<sup>1</sup> Sea AI Lab  <sup>2</sup> Sun Yat-sen University <sup>3</sup> Harvard University</br>
-<sup>* </sup>Equal contribution <sup>#</sup>Corresponding author
-
-This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](https://arxiv.org/abs/2312.02439). 
+This repository is the official codebase of "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation" [[paper]](https://arxiv.org/abs/2312.02439). Our paper has been accepted at the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024 (CVPR 2024).
 
 🤣👉**Click [[project page]](https://zhongshsh.github.io/CLoT/) for more funny examples**👈.
 
@@ -28,9 +23,46 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
   <img src="image/example.png">
 </p>
 
+## 🤗 Quickstart
+
+We provide a simple Chinese example for using CLoT with zero-shot inference. Specifically, we just need a few lines of code as shown below.
+
+```python
+from transformers import AutoTokenizer
+from transformers.generation import GenerationConfig
+from peft import AutoPeftModelForCausalLM
+import torch
+
+mpath = "zhongshsh/CLoT-cn"
+tokenizer = AutoTokenizer.from_pretrained(mpath, trust_remote_code=True)
+generation_config = GenerationConfig.from_pretrained(mpath, trust_remote_code=True)
+model = AutoPeftModelForCausalLM.from_pretrained(
+    mpath, 
+    device_map="cuda",
+    trust_remote_code=True
+).eval()
+
+query = tokenizer.from_list_format([
+    {'image': 'https://i.postimg.cc/Fz0bVzpm/test.png'},
+    {'text': '让我们打破常规思维思考问题。请仔细阅读图片，写出一个令人感到意外且搞笑的句子。'},
+])
+response, history = model.chat(tokenizer, query=query, history=None, generation_config=generation_config)
+print(response)
+```
+
+## 💬 Gradio Web UI
+
+Try launching the Gradio web interface with the following code!
+
+```shell
+python gradio_demo.py
+```
+
 ## 😆 News
 
-2023/12/6 - We released our project page [[project page]](https://zhongshsh.github.io/CLoT/). 👈😆Please check it out! 
+2024/3/16 - We released our [dataset](https://huggingface.co/datasets/zhongshsh/CLoT-Oogiri-GO) and [checkpoint](https://huggingface.co/zhongshsh/CLoT-cn). 👈😆Please try it! 
+
+2023/12/6 - We released our [project page](https://zhongshsh.github.io/CLoT/). 👈😆Please check it out! 
 
 2023/12/5 - We released our paper [[arxiv]](https://arxiv.org/abs/2312.02439). Please check it out! 
 
@@ -39,11 +71,9 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 - [x] project page
 - [x] preprint paper
-- [ ] online demo (Hugging Face etc.)
-- [ ] code
-- [ ] dataset
-
-
+- [x] ~~online demo (Hugging Face etc.)~~ checkpoint
+- [x] dataset
+- [x] code
 
 
 ## 😄 Citation
