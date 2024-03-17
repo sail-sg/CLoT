@@ -44,7 +44,7 @@ model = AutoPeftModelForCausalLM.from_pretrained(
 
 query = tokenizer.from_list_format([
     {'image': 'https://i.postimg.cc/Fz0bVzpm/test.png'},
-    {'text': '你是一个搞笑专家，非常了解网络和现实生活当中的各种梗和流行语，热衷于用幽默感给大家带来欢乐。让我们打破常规思维思考问题。\n用户：请仔细阅读图片，写出一个令人感到意外且搞笑的句子。'},
+    {'text': '让我们打破常规思维思考问题。请仔细阅读图片，写出一个令人感到意外且搞笑的句子。'},
 ])
 response, history = model.chat(tokenizer, query=query, history=None, generation_config=generation_config)
 print(response)
