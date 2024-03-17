@@ -71,7 +71,7 @@ python gradio_demo.py
 
 - [x] project page
 - [x] preprint paper
-- [x] ~~online demo (HuggingFace etc.)~~ checkpoint
+- [x] ~~online demo (Hugging Face etc.)~~ checkpoint
 - [x] dataset
 - [x] code
 
