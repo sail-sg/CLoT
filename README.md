@@ -25,29 +25,16 @@ To the best of our knowledge, we are the first to profoundly explore the Leap-of
 
 ## 🤗 Quickstart
 
-We provide a simple Chinese example for using CLoT with zero-shot inference. Specifically, we just need a few lines of code as shown below.
+We provide a simple Chinese example in `inference.py` for using CLoT with zero-shot inference. Before you start, make sure you install the following packages:
 
-```python
-from transformers import AutoTokenizer
-from transformers.generation import GenerationConfig
-from peft import AutoPeftModelForCausalLM
-import torch
+```shell
+pip install -r requirements.txt
+```
 
-mpath = "zhongshsh/CLoT-cn"
-tokenizer = AutoTokenizer.from_pretrained(mpath, trust_remote_code=True)
-generation_config = GenerationConfig.from_pretrained(mpath, trust_remote_code=True)
-model = AutoPeftModelForCausalLM.from_pretrained(
-    mpath, 
-    device_map="cuda",
-    trust_remote_code=True
-).eval()
+Then run the command below:
 
-query = tokenizer.from_list_format([
-    {'image': 'https://i.postimg.cc/Fz0bVzpm/test.png'},
-    {'text': '让我们打破常规思维思考问题。请仔细阅读图片，写出一个令人感到意外且搞笑的句子。'},
-])
-response, history = model.chat(tokenizer, query=query, history=None, generation_config=generation_config)
-print(response)
+```shell
+python inference.py
 ```
 
 ## 💬 Gradio Web UI
