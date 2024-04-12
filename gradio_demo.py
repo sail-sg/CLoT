@@ -39,7 +39,7 @@ def _get_args():
     parser.add_argument(
         "--share",
         action="store_true",
-        default=True,
+        default=False,
         help="Create a publicly shareable link for the interface.",
     )
     parser.add_argument(
@@ -59,15 +59,15 @@ def _get_args():
     return args
 
 
-def _load_model_tokenizer(checkpoint_path):
+def _load_model_tokenizer(checkpoint_path, device_map):
     tokenizer = AutoTokenizer.from_pretrained(
         checkpoint_path,
         trust_remote_code=True,
         resume_download=True,
     )
-
+        
     model = AutoPeftModelForCausalLM.from_pretrained(
-        checkpoint_path, device_map="cuda", trust_remote_code=True, fp16=True
+        checkpoint_path, device_map=device_map, trust_remote_code=True, fp16=True
     ).eval()
 
     model.generation_config = GenerationConfig.from_pretrained(
@@ -109,7 +109,12 @@ def _parse_text(text):
 
 
 def _launch_demo(args):
-    model, tokenizer = _load_model_tokenizer(args.checkpoint_path)
+    if args.cpu_only:
+        device_map = "cpu"
+    else:
+        device_map = "cuda"
+        
+    model, tokenizer = _load_model_tokenizer(args.checkpoint_path, device_map)
 
     def predict(_chatbot, task_history):
         if len(task_history) == 0 or len(task_history[-1]) != 2:
