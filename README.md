@@ -47,6 +47,8 @@ python gradio_demo.py
 
 ## 😆 News
 
+2024/4/13 - We released our [dataset](https://modelscope.cn/datasets/shan233/CLoT-Oogiri-GO/summary) and [checkpoint](https://modelscope.cn/models/shan233/CLoT-cn/summary) in ModelScope. 👈😆Please try it if you can't access Hugging Face! 
+
 2024/3/16 - We released our [dataset](https://huggingface.co/datasets/zhongshsh/CLoT-Oogiri-GO) and [checkpoint](https://huggingface.co/zhongshsh/CLoT-cn). 👈😆Please try it! 
 
 2023/12/6 - We released our [project page](https://zhongshsh.github.io/CLoT/). 👈😆Please check it out! 
